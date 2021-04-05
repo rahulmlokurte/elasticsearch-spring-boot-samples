@@ -33,6 +33,20 @@ epoch      timestamp cluster       status node.total node.data shards pri relo i
 1617634835 15:00:35  elasticsearch yellow          1         1      1   1    0    0        1             0                  -                 50.0%
 ```
 
+🎨 Setup Elasticsearch using Docker
+===================================
+🎱 Pull the image
+
+```markdown
+docker pull docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+```
+
+🎱 Starting a single node cluster with docker
+
+```markdown
+docker run -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+```
+
 🩸 Index Creation
 ==================
 We have to run the below command to create the index called ***"employee"*** which is required for our application.
