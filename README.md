@@ -60,7 +60,7 @@ Now we are all set to run the application. Just run the below commands.
   java -jar target/elasticsearch-spring-boot-samples-0.0.1-SNAPSHOT.jar
   ```
   
-Please check the associated blog post on the website [spring-boot-with-elasticsearch](http://www.rahullokurte.com/spring-boot-with-elasticsearch/) 
+**Note: Please check the associated blog post on the website** [spring-boot-with-elasticsearch](http://www.rahullokurte.com/spring-boot-with-elasticsearch/)
 
 
 
