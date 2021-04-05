@@ -2,7 +2,7 @@
 
 <p>This repository is the sample spring boot application which is connected to ElasticSearch.<p>
 
-🧠 Setup Elasticsearch in Local
+🎨 Setup Elasticsearch in Local
 ===============================
 
 🎱 Download the Elasticsearch archive
@@ -32,6 +32,34 @@ We get the below response. It shows yellow status as we are running only one ins
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks max_task_wait_time active_shards_percent
 1617634835 15:00:35  elasticsearch yellow          1         1      1   1    0    0        1             0                  -                 50.0%
 ```
+
+🩸 Index Creation
+==================
+We have to run the below command to create the index called ***"employee"*** which is required for our application.
+
+```shell script
+curl -X PUT -u undefined:$ESPASS "localhost:9200/employee?pretty"
+```
+When we get the below response, it means the index is created.
+```json
+{
+  "acknowledged" : true,
+  "shards_acknowledged" : true,
+  "index" : "employee"
+}
+```
+
+🩸 Run the application
+=======================
+Now we are all set to run the application. Just run the below commands.
+
+- ```
+  mvn clean install
+  ```
+- ```
+  java -jar target/elasticsearch-spring-boot-samples-0.0.1-SNAPSHOT.jar
+  ``` 
+
 
 
 
