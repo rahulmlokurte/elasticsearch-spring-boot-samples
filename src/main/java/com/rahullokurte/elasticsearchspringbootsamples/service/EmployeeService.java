@@ -2,14 +2,12 @@ package com.rahullokurte.elasticsearchspringbootsamples.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.rahullokurte.elasticsearchspringbootsamples.model.EmployeeDocument;
-import org.apache.lucene.search.join.ScoreMode;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
